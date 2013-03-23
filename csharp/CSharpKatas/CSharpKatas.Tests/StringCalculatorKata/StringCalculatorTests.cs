@@ -61,27 +61,45 @@ namespace CSharpKatas.Tests.StringCalculatorKata
                 Assert.Equal(3, result);
             }
 
-            [Fact]
-            public void ShouldReturnSum_WhenPassedNumbersAreOfVariableLength()
+            [Theory]
+            [InlineData("//;\n1;2")]
+            public void ShouldReturnSum_WhenANewDelimiterIsIntroduced(string numbers)
             {
                 var calc = GetSut();
-                var amountOfNumbers = _random.GetNextInteger(1, 100);
-                var listOfNumbers = new List<int>();
 
+                var result = calc.Add(numbers);
+
+                Assert.Equal(3, result);
+            }
+
+            [Theory]
+            [InlineData("-1,2")]
+            [InlineData("2,-1")]
+            public void ShouldThrownAnException_WhenPassedNumberIsNegative(string numbers)
+            {
+                var calc = GetSut();
+
+                Assert.Throws<Exception>(() =>calc.Add(numbers));
+            }
+
+            [Fact]
+            public void ShouldBeAbleToHandleAnUnknownAmountOfNumbers()
+            {
+                var calc = GetSut();
+                var amountOfNumbers = _random.GetNextInteger(1, 1000);
+                var numbers = string.Empty;
+                var expectedResult = 0;
                 for (int i = 0; i < amountOfNumbers; i++)
                 {
-                    listOfNumbers.Add(_random.GetNextInteger(0, 1000));       
+                    numbers += i;
+                    expectedResult += i;
+                    if (i != amountOfNumbers - 1)
+                        numbers += ",";
                 }
 
-                var expectedResult = listOfNumbers.Sum(x => x);
-                var numbersString = "";
-                foreach(var s in listOfNumbers.Select(x => "," + x))
-                    numbersString += s;
-                numbersString = numbersString.Remove(0, 1);
+                var actual = calc.Add(numbers);
 
-                var actualResult = calc.Add(numbersString);
-
-                Assert.Equal(expectedResult, actualResult);
+                Assert.Equal(expectedResult, actual);
             }
         }
     }
