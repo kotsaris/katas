@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6c596090-8bee-43a6-9cad-6880256eb9f9" name="HundredDoors" linkedPackageId="c9cc7df6-1eeb-4f67-9095-b1abef0bc76c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b26ed64c-9b42-4354-a75d-67202a93adf1" name="Door" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad544a89-6ac5-4aa2-978e-70e3968aa10c" />
+        <ownedAttributesInternal>
+          <property Id="2b1eb4db-783a-4604-ac23-515da20a855e" name="IsOpen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f6fc0b41-f7d2-4ca4-a846-b82125d924c4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2de57111-79f0-4db8-96cc-350d52c02ac7" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="61048afa-c168-42fc-9ea3-d0c646896360" name="Toggle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7a529178-2f72-47a7-97e9-ba4ddcd91f77" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="2de57111-79f0-4db8-96cc-350d52c02ac7" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="461538a6-be03-470c-a562-6924bbdfe212" name="DoorToggler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5ee107d0-fdd6-4472-8b72-8a0d2790501f" />
+        <ownedAttributesInternal>
+          <property Id="59d7ebd5-f519-432e-8e2e-c61f0044c7df" name="currentSkip" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0bf62576-31dd-4109-accf-5c828d691d0d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="be700ea4-10a9-4023-bb3c-bda6bf9b508e" name="ToggleTraverse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="951fa5c4-1897-450e-a3f8-93051684fa05" />
+          </operation>
+          <operation Id="42307635-7fcc-44a3-8dbc-85cf05263e03" name="DoorToggle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5c1987d1-6c16-4832-9fd4-ad38bc783b79" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cc4ecacb-779e-4ce2-81a6-8d884f9ac12c" name="doors" direction="In" isUnique="false">
+                  <elementDefinition Id="bd0f71a4-2bd9-4217-8c47-01749d422f76" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c9cc7df6-1eeb-4f67-9095-b1abef0bc76c" name="ModelingProject1">
+    <elementDefinition Id="5d0d2d1b-fe70-4a76-9a05-30883fa3f5c1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fdce76ed-c706-4dbb-9b3d-19e7d663f31c">
+        <profileInstance Id="5bccb434-7415-4a68-986f-62e4cd6eb143" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a09224bf-1d9d-4793-9ac3-92f179d7994b">
+        <profileInstance Id="eddabfd7-dd69-489d-960b-76a969951b66" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

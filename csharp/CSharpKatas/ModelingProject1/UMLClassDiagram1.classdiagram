@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="43874f53-f110-451c-8bac-5b26dee632fc" name="UMLClassDiagram1" linkedPackageId="30fb4350-7268-4f1d-a523-b172ac1ca704" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="93c13dc5-c65a-443e-80d2-af1fc6ba595a">
+      <profileInstance Id="938f20fc-a48d-4682-bdf6-46379cec9c54" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d0ac97d5-eb49-4c92-96cd-e378ff2fcfe0">
+      <profileInstance Id="8a72146e-43a0-4c3d-9d3a-1f1d069670d5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a1f8978e-c64a-4430-a21a-31b1e234a0dc" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="448590d7-3050-406f-89e7-8640eefd55c2" />
+        <targetEnds>
+          <association Id="c33da23d-fdb9-4526-8bcf-8429e7e8b5bd" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Frame" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cf0f3013-55a7-41fb-ab2f-a04129bb398b" LastKnownName="Frame" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93ac6fec-2e33-42dd-8ae9-1b61e41e2055" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7e4b1f8-e1b4-4aad-bbbc-c2d9034874d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65cb92b3-c52d-4c17-8db2-7c773f330c1f" name="Frame" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="26176035-a7fc-4408-9382-8babb0367167" name="Lower" value="10">
+                      <elementDefinition Id="608dd6e1-876d-47e1-89b7-dabf20f0feff" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f21a8afe-a194-438e-8d86-c829cb6d4d81" name="Upper" value="10">
+                      <elementDefinition Id="5a456214-46c8-40f1-b0d3-9a8ea370c0fb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5da70de3-6d41-40bd-8011-71103bc7e75a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b792ff1-a0b1-4cd7-9127-666858bd170c" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cf0f3013-55a7-41fb-ab2f-a04129bb398b" name="Frame" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="37c24172-c456-45a2-b6c4-c7289815ac5a" />
+        <targetEnds>
+          <association Id="3a57f333-1f75-466d-a773-d1ca1f40b3a4" isDerived="false" sourceEndRoleName="Frame" targetEndRoleName="Roll" isLeaf="false" isAbstract="false">
+            <classMoniker Id="860d29a2-0da8-4bbe-981a-7539d1fdc3b8" LastKnownName="Roll" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e48bb69-a229-431d-9686-418faacf0711" name="Frame" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="72d248b0-b782-46d7-b0b5-bb352e14b4b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b55394e-c673-4bf1-a4c6-2aed99c52bf9" name="Roll" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="4ffe5be1-8201-465a-b29a-ca2a03b23aa1" name="Lower" value="1">
+                      <elementDefinition Id="f3540b58-a67e-4792-ad07-7da82b23d41d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1d59cb01-38c1-4895-a28e-60ba57b4161e" name="Upper" value="2">
+                      <elementDefinition Id="66dd3dbb-0cfa-4709-a6fc-2abec35dedc5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a66323cd-a1c5-4c2d-a77e-bf6565789acc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c031b878-adc9-4874-abcc-4587fe9b0bec" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="860d29a2-0da8-4bbe-981a-7539d1fdc3b8" name="Roll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4069e63e-39c2-4cda-bfe6-0fd3f99c469a" />
+        <ownedAttributesInternal>
+          <property Id="0094930a-d609-450c-bd19-dcf62bfdc02e" name="Score" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c95d80fe-5564-454e-9f35-2d58607a5189" />
+          </property>
+          <property Id="b48da2a9-b45a-44eb-84bc-d685cbcebc67" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b8c7cc1-f46c-47d6-8774-4a3e068c5208" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3d5c3f0b-a093-42b3-a395-34a8de01fa77" LastKnownName="RollType" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="48c4bec5-ca13-4f55-bee2-f07d071a69e5" name="RollType" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="689900b1-a658-47b9-9e19-bbeb3352b665" />
+        <ownedLiterals>
+          <enumerationLiteral Id="5f03e056-ab5e-4773-98e6-63bbaec98176" name="Spare">
+            <elementDefinition Id="a6536618-23de-4b2d-9658-a2386bd77c23" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="7128b5f0-a7ea-432d-9815-3342a1f490b1" name="Normal">
+            <elementDefinition Id="d4c9bb25-2346-45e9-a656-be71c33915dd" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="6e14c817-9ea6-4ad6-bfa1-a6f20b4003a3" name="Strike">
+            <elementDefinition Id="77e0bb60-33ce-44b5-b9ee-280573def373" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3d5c3f0b-a093-42b3-a395-34a8de01fa77" name="RollType" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::RollType">
+        <elementDefinition Id="689900b1-a658-47b9-9e19-bbeb3352b665" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="30fb4350-7268-4f1d-a523-b172ac1ca704" name="ModelingProject1">
+    <elementDefinition Id="5d0d2d1b-fe70-4a76-9a05-30883fa3f5c1" />
+  </package>
+</logicalClassDesignerModel>

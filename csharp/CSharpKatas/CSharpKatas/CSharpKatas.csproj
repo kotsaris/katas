@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HundredDoors\Door.cs" />
+    <Compile Include="HundredDoors\DoorTroggler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SolitaireKata\Card.cs" />
     <Compile Include="SolitaireKata\Deck.cs" />
@@ -47,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="StringCalculatorKata\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HundredDoors\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
