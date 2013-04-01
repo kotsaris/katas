@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anagram\AnagramerTests.cs" />
     <Compile Include="BowlingGame\GameTest.cs" />
     <Compile Include="HundredDoors\HundredDoorsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

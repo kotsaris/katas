@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anagram\Anagramer.cs" />
     <Compile Include="HundredDoors\Door.cs" />
     <Compile Include="HundredDoors\DoorTroggler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="StringCalculatorKata\StringCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Anagram\README.md" />
     <None Include="StringCalculatorKata\README.md" />
   </ItemGroup>
   <ItemGroup>
