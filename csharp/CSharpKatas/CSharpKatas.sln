@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpKatas", "CSharpKatas\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpKatas.Tests", "CSharpKatas.Tests\CSharpKatas.Tests.csproj", "{6DCE3AE9-4D6F-4DB4-8E8B-617DC0919948}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{11C88070-9FDC-4B01-8E35-B29C3E17340B}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CSharpKatas.Design", "CSharpKatas.Design\CSharpKatas.Design.modelproj", "{11C88070-9FDC-4B01-8E35-B29C3E17340B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

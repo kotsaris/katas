@@ -42,6 +42,8 @@
     <Compile Include="Anagram\Anagramer.cs" />
     <Compile Include="HundredDoors\Door.cs" />
     <Compile Include="HundredDoors\DoorTroggler.cs" />
+    <Compile Include="LeapYear\ILeapYearValidator.cs" />
+    <Compile Include="LeapYear\LeapYearValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SolitaireKata\Card.cs" />
     <Compile Include="SolitaireKata\Deck.cs" />
@@ -50,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Anagram\README.md" />
+    <None Include="LeapYear\README.md" />
     <None Include="StringCalculatorKata\README.md" />
   </ItemGroup>
   <ItemGroup>
